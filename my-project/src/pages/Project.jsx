@@ -1,11 +1,12 @@
 import React from "react";
+import WebProject from "../containers/Project/webProject";
 import ProjectMenu from "../components/ProjectMenu";
 
-const Project = () => {
+const ProjectWeb = () => {
   return (
-    <div className="bg-gradient-to-b from-white to-slate-100 min-h-screen">
+    <div className="bg-gradient-to-b from-white to-blue-50 min-h-screen">
       <div className="relative isolate px-6 pt-20 lg:px-8">
-        {/* Background Top Blob */}
+        {/* Background Shape Atas */}
         <div aria-hidden="true" className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl">
           <div
             style={{
@@ -15,20 +16,21 @@ const Project = () => {
           />
         </div>
 
-        {/* Section Title */}
-        <div className="mx-auto max-w-4xl py-24 sm:py-32 lg:py-20 text-center">
+        {/* Content */}
+        <div className="mx-auto max-w-4xl py-10 sm:py-20 lg:py-10 text-center">
           <h1 className="text-4xl font-extrabold tracking-tight text-gray-900 sm:text-6xl">My Projects</h1>
           <p className="mt-6 text-lg leading-8 text-gray-600">From design to code, I've built and delivered user-focused digital experiences. Explore a range of work that merges clean UI, responsive web design, and creative vision.</p>
-        </div>
-
-        {/* Project Menu Section */}
-        <div className="flex justify-center">
-          <div className="w-full max-w-5xl p-6 bg-white rounded-2xl shadow-xl">
+          <div className="mt-6 text-lg leading-8 text-gray-600">
             <ProjectMenu />
           </div>
         </div>
 
-        {/* Background Bottom Blob */}
+        {/* Project Showcase */}
+        <div className="flex flex-col items-center gap-12">
+          <WebProject />
+        </div>
+
+        {/* Background Shape Bawah */}
         <div aria-hidden="true" className="absolute inset-x-0 bottom-0 -z-10 transform-gpu overflow-hidden blur-3xl">
           <div
             style={{
@@ -42,4 +44,4 @@ const Project = () => {
   );
 };
 
-export default Project;
+export default ProjectWeb;

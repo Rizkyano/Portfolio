@@ -1,5 +1,5 @@
 import React from "react";
-import WebProject from "../containers/webProject";
+import WebProject from "../containers/Project/webProject";
 import ProjectMenu from "../components/ProjectMenu";
 
 const ProjectWeb = () => {

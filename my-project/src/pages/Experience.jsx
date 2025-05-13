@@ -1,7 +1,7 @@
 import React from "react";
-import Experience from "../components/Experience";
+import ExperienceBox from "../components/Experience";
 
-const About = () => {
+const Experience = () => {
   return (
     <div className="bg-white ">
       <div className="relative isolate px-6 pt-14 lg:px-8">
@@ -27,7 +27,7 @@ const About = () => {
           </div>
           <div className="flex flex-col gap-4 ">
             <div>
-              <Experience />
+              <ExperienceBox />
             </div>
           </div>
         </div>
@@ -44,4 +44,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default Experience;

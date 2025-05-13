@@ -1,11 +1,11 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper/modules";
-import image1 from "../assets/web/image1.png";
+import image1 from "../../assets/web/image1.png";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import ProjectMenu from "../components/ProjectMenu";
+// import ProjectMenu from "../../components/ProjectMenu";
 
 function WebProject() {
   return (
