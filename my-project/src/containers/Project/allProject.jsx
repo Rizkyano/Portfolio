@@ -2,54 +2,56 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper/modules";
 import image1 from "../../assets/web/image1.png";
-import Moodeek from "../../assets/web/Moodeek.png";
-import FoodPOS from "../../assets/web/FoodPOS.png";
+import Design from "../../assets/Design/Design.png";
+import TotoKromo from "../../assets/game/TotoKromo.png";
+
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import { Link } from "react-router-dom";
 // import ProjectMenu from "../../components/ProjectMenu";
 
-function WebProject() {
+function allProject() {
   return (
     <div className="w-full max-w-5xl p-6 bg-white rounded-2xl shadow-xl">
       {/* Swiper Carousel */}
       <Swiper modules={[Navigation]} spaceBetween={30} slidesPerView={1} navigation>
         <SwiperSlide>
-          <h3 className="text-3xl font-bold text-gray-800 mb-8 text-center">🚀 E-Commerce Platform</h3>
+          <h3 className="text-3xl font-bold text-gray-800 mb-8 text-center">🚀 Web Developer</h3>
           <div className="mt-8 mx-5 text-center overflow-hidden">
             <img src={image1} alt="Project Screenshot 1" className="w-full max-w-3xl h-80 object-cover rounded-xl shadow-md mx-auto" />
             <p className="text-lg mt-8 mx-20 text-gray-600">A sleek, responsive e-commerce website built with React, featuring product catalogs, shopping carts, and secure checkout processes, integrated with TailwindCSS for a modern UI.</p>
             <div className="mt-6">
-              <a href="https://milestone-2-rizkyano.vercel.app/product" className="inline-flex items-center px-6 py-3 text-sm font-semibold text-white bg-indigo-600 rounded-full hover:bg-indigo-700 transition">
-                Go to the webseite
+              <Link to="/web" className="inline-flex items-center px-6 py-3 text-sm font-semibold text-white bg-indigo-600 rounded-full hover:bg-indigo-700 transition">
+                See More Projects
                 <span className="ml-2 text-xl">→</span>
-              </a>
+              </Link>
             </div>
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <h3 className="text-3xl font-bold text-gray-800 mb-8 text-center">🚀 Moodeek</h3>
+          <h3 className="text-3xl font-bold text-gray-800 mb-8 text-center">🚀Game Developer</h3>
           <div className="mt-8 mx-5 text-center overflow-hidden">
-            <img src={Moodeek} alt="Project Screenshot 1" className="w-full max-w-3xl h-80 object-cover rounded-xl shadow-md mx-auto" />
+            <img src={TotoKromo} alt="Project Screenshot 1" className="w-full max-w-3xl h-80 object-cover rounded-xl shadow-md mx-auto" />
             <p className="text-lg mt-8 mx-20 text-gray-600">A sleek, responsive e-commerce website built with React, featuring product catalogs, shopping carts, and secure checkout processes, integrated with TailwindCSS for a modern UI.</p>
             <div className="mt-6">
-              <a href="http://ngopilah.my.id/" className="inline-flex items-center px-6 py-3 text-sm font-semibold text-white bg-indigo-600 rounded-full hover:bg-indigo-700 transition">
-                Go to the webseite
+              <Link to="/game" className="inline-flex items-center px-6 py-3 text-sm font-semibold text-white bg-indigo-600 rounded-full hover:bg-indigo-700 transition">
+                See More Projects
                 <span className="ml-2 text-xl">→</span>
-              </a>
+              </Link>
             </div>
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <h3 className="text-3xl font-bold text-gray-800 mb-8 text-center">🚀 Food POS</h3>
+          <h3 className="text-3xl font-bold text-gray-800 mb-8 text-center">🚀 Design</h3>
           <div className="mt-8 mx-5 text-center overflow-hidden">
-            <img src={FoodPOS} alt="Project Screenshot 1" className="w-full max-w-3xl h-80 object-cover rounded-xl shadow-md mx-auto" />
+            <img src={Design} alt="Project Screenshot 1" className="w-full max-w-3xl h-80 object-cover rounded-xl shadow-md mx-auto" />
             <p className="text-lg mt-8 mx-20 text-gray-600">A sleek, responsive e-commerce website built with React, featuring product catalogs, shopping carts, and secure checkout processes, integrated with TailwindCSS for a modern UI.</p>
             <div className="mt-6">
-              <a href="https://pos-project-revou.vercel.app/dashboard" className="inline-flex items-center px-6 py-3 text-sm font-semibold text-white bg-indigo-600 rounded-full hover:bg-indigo-700 transition">
-                Go to the webseite
+              <Link to="/web" className="inline-flex items-center px-6 py-3 text-sm font-semibold text-white bg-indigo-600 rounded-full hover:bg-indigo-700 transition">
+                See More Projects
                 <span className="ml-2 text-xl">→</span>
-              </a>
+              </Link>
             </div>
           </div>
         </SwiperSlide>
@@ -58,4 +60,4 @@ function WebProject() {
   );
 }
 
-export default WebProject;
+export default allProject;

@@ -1,8 +1,8 @@
 import React from "react";
-import AllProject from "../containers/Project/allProject";
+import GameProject from "../containers/Project/gameProject";
 import ProjectMenu from "../components/ProjectMenu";
 
-const Project = () => {
+const ProjectGame = () => {
   return (
     <div className="bg-gradient-to-b from-white to-blue-50 min-h-screen">
       <div className="relative isolate px-6 pt-20 lg:px-8">
@@ -18,8 +18,10 @@ const Project = () => {
 
         {/* Content */}
         <div className="mx-auto max-w-4xl py-10 sm:py-20 lg:py-10 text-center">
-          <h1 className="text-4xl font-extrabold tracking-tight text-gray-900 sm:text-6xl">My Projects</h1>
-          <p className="mt-6 text-lg leading-8 text-gray-600">From design to code, I've built and delivered user-focused digital experiences. Explore a range of work that merges clean UI, responsive web design, and creative vision.</p>
+          <h1 className="text-4xl font-extrabold tracking-tight text-gray-900 sm:text-6xl">Game Projects</h1>
+          <p className="mt-6 text-lg leading-8 text-gray-600">
+            Crafting scalable, component-based interfaces with React and TypeScript. Powered by TailwindCSS for a modern and responsive look, and focusing on accessibility and UI/UX principles.
+          </p>
           <div className="mt-6 text-lg leading-8 text-gray-600">
             <ProjectMenu />
           </div>
@@ -27,7 +29,7 @@ const Project = () => {
 
         {/* Project Showcase */}
         <div className="flex flex-col items-center gap-12">
-          <AllProject />
+          <GameProject />
         </div>
 
         {/* Background Shape Bawah */}
@@ -44,4 +46,4 @@ const Project = () => {
   );
 };
 
-export default Project;
+export default ProjectGame;

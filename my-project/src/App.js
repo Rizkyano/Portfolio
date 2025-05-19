@@ -7,6 +7,8 @@ import Navbar from "../src/components/Navbar";
 import Experience from "./pages/Experience";
 import Project from "./pages/Project";
 import ProjectWeb from "./pages/projectWeb";
+import ProjectGame from "./pages/projectGame";
+import ProjectDesign from "./pages/ProjectDesign";
 
 function App() {
   return (
@@ -19,6 +21,8 @@ function App() {
           <Route path="/experience" element={<Experience />} />
           <Route path="/project" element={<Project />} />
           <Route path="/web" element={<ProjectWeb />} />
+          <Route path="/game" element={<ProjectGame />} />
+          <Route path="/design" element={<ProjectDesign />} />
         </Routes>
       </Router>
     </>
