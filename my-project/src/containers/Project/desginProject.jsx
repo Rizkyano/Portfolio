@@ -37,9 +37,16 @@ function desginProject() {
     { src: SCM1, alt: "Standee 1", col: 2, row: 1 },
   ];
   return (
+    // <div className="w-full max-w-5xl p-6 h-full bg-white rounded-2xl shadow-xl">
     <div className="w-full max-w-5xl p-6 bg-white rounded-2xl shadow-xl">
       {/* Swiper Carousel */}
-      <Swiper modules={[Navigation]} spaceBetween={30} slidesPerView={1} navigation>
+      <Swiper
+        modules={[Navigation]}
+        spaceBetween={30}
+        slidesPerView={1}
+        navigation
+        autoHeight={true} // ✅ Ini kunci utama
+      >
         <SwiperSlide>
           <h3 className="text-3xl font-bold text-gray-800 mb-8 text-center">🚀 More Design</h3>
           <div className="mt-8 mx-5 text-center overflow-hidden ">
@@ -62,10 +69,7 @@ function desginProject() {
           <h3 className="text-3xl font-bold text-gray-800 mb-8 text-center">🚀 Intonate.pro</h3>
           <div className="mt-8 mx-5 text-center overflow-hidden">
             <img src={Intonate} alt="Project Screenshot 1" className="w-full max-w-3xl h-80 object-cover rounded-xl  mx-auto" />
-            <p className="text-lg mt-8 mx-20 text-gray-600">
-              In this project, I was a graphic design freelancer for the event's social media. The event had just been created so there was no logo, basic colors, and assets as an identity. I helped create the logo, assets and provided
-              various color combinations as an identity.
-            </p>
+            <p className="text-lg mt-8 mx-20 text-gray-600">A sleek, responsive e-commerce website built with React, featuring product catalogs, shopping carts, and secure checkout processes, integrated with TailwindCSS for a modern UI.</p>
           </div>
         </SwiperSlide>
         <SwiperSlide>
@@ -73,22 +77,6 @@ function desginProject() {
           <div className="mt-8 mx-5 text-center overflow-hidden">
             <img src={Mascot} alt="Project Screenshot 1" className="w-full max-w-3xl h-80 object-cover rounded-xl mx-auto" />
             <p className="text-lg mt-8 mx-20 text-gray-600">A sleek, responsive e-commerce website built with React, featuring product catalogs, shopping carts, and secure checkout processes, integrated with TailwindCSS for a modern UI.</p>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <h3 className="text-3xl font-bold text-gray-800 mb-8 text-center">🚀 Desgin Portfolio</h3>
-          <div className="mt-8 mx-5 text-center overflow-hidden">
-            <img src={Mascot} alt="Project Screenshot 1" className="w-full max-w-3xl h-80 object-cover rounded-xl mx-auto" />
-            <p className="text-lg mt-8 mx-20 text-gray-600">A sleek, responsive e-commerce website built with React, featuring product catalogs, shopping carts, and secure checkout processes, integrated with TailwindCSS for a modern UI.</p>
-            <div className="mt-6">
-              <a
-                href="https://drive.google.com/file/d/1N3VKk4NtAK4qtAJa-HPWngKmKwyobBf3/view?usp=sharing+"
-                className="inline-flex items-center px-6 py-3 text-sm font-semibold text-white bg-indigo-600 rounded-full hover:bg-indigo-700 transition"
-              >
-                Download Game
-                <span className="ml-2 text-xl">→</span>
-              </a>
-            </div>
           </div>
         </SwiperSlide>
       </Swiper>
