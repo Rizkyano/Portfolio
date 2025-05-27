@@ -45,9 +45,12 @@ const About = () => {
                   I'm a passionate designer with a knack for transforming ideas into engaging visuals. From marketing materials to brand identities, I enjoy blending creativity with strategy to deliver impactful designs.
                 </p>
                 <div className="mt-6">
-                  <a href="#" className="inline-block text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 transition px-5 py-2 rounded-full">
+                  <Link
+                    to="https://drive.usercontent.google.com/download?id=10Jg4n9zlBv7z6fqo96TXGU_cHAyheSnR&export=download&authuser=0&confirm=t&uuid=542ed22e-7101-4293-be05-74edd4c59910&at=ALoNOgmjjrq4Ltep9P4lmQjtWCW4:1748154759981"
+                    className="inline-block text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 transition px-5 py-2 rounded-full"
+                  >
                     Download CV →
-                  </a>
+                  </Link>
                 </div>
               </div>
             </motion.div>
