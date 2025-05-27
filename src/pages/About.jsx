@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import Education from "../components/Education";
 import Profile from "../assets/Profile/Profile.jpg";
+import { Link } from "react-router-dom";
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 30 },
