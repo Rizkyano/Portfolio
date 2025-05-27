@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Dialog, DialogPanel } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import React from "react";
+import Logo from "../assets/logo/RRS.png";
 
 const navigation = [
   { name: "Project", href: "project" },
@@ -19,7 +20,7 @@ const Navbar = () => {
           <div className="flex lg:flex-1">
             <a href="/" className="-m-1.5 p-1.5">
               <span className="sr-only">Your Company</span>
-              <img alt="" src="https://tailwindui.com/plus-assets/img/logos/mark.svg?color=indigo&shade=600" className="h-8 w-auto" />
+              <img alt="" src={Logo} className="h-8 w-auto" />
             </a>
           </div>
           <div className="flex lg:hidden">

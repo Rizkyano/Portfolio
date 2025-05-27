@@ -9,6 +9,7 @@ import Project from "./pages/Project";
 import ProjectWeb from "./pages/projectWeb";
 import ProjectGame from "./pages/projectGame";
 import ProjectDesign from "./pages/ProjectDesign";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           <Route path="/game" element={<ProjectGame />} />
           <Route path="/design" element={<ProjectDesign />} />
         </Routes>
+        <Footer />
       </Router>
     </>
   );
